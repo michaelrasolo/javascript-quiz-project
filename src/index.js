@@ -206,4 +206,3 @@ document.addEventListener("DOMContentLoaded", () => {
     resultContainer.innerText = `You scored ${correctAnswers} out of ${quiz.questions.length} correct answers!`;  }
   
 });
-// all right !!
