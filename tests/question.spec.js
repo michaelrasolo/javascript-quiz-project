@@ -83,10 +83,10 @@ describe("Question", () => {
       const clone = structuredClone(testChoices);
       // Instantiate a new Question object with the test choices array
       const question = new Question("test", clone, "test");
-      console.log(testChoices);
+      // console.log(testChoices);
       // Call the shuffleChoices() method on the Question object
       question.shuffleChoices();
-      console.log(testChoices);
+      // console.log(testChoices);
       // Check that the 'choices' property of the Question object is not equal to the test choices array (i.e. it has been changed/shuffled)
       expect(question.choices).not.toEqual(testChoices);
     });

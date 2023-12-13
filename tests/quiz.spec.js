@@ -239,10 +239,10 @@ describe("Quiz", () => {
   // Once you start working on the tests, change the 'xdescribe' to 'describe' to enable the tests.
   // ****************************************************************************************************
 
-  xdescribe("filterQuestionsByDifficulty() method", () => {   
+  describe("filterQuestionsByDifficulty() method", () => {   
+    // Instantiate a new Quiz object
+    const quiz = new Quiz([], "test", 60);
     it("should use the 'filter()' array method on the 'questions' array", () => {
-      // Instantiate a new Quiz object
-      const quiz = new Quiz([], "test", 60);
       // Set up a spy on the 'filter()' array method to track calls to it
       const filterSpy = spyOn(quiz.questions, "filter");
 
@@ -271,6 +271,7 @@ describe("Quiz", () => {
       // 1. Instantiate a new Quiz object
 
       // 2. Check if the filterQuestionsByDifficulty() method is defined
+      expect(typeof quiz.filterQuestionsByDifficulty).toBe("function");
 
     });
 

@@ -26,4 +26,4 @@ const question1 = new Question(
   5
 );
 
-question1.shuffleChoices();
+// question1.shuffleChoices();
